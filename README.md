@@ -1,5 +1,5 @@
 # leetcode-java
-```
+```css
 <style>
 table {
     width: 100px;

@@ -5,9 +5,6 @@ import java.util.Map;
  * Created by dingyufan on 2018/11/21.
  */
 public class TwoSum {
-    public static void main(String[] args){
-
-    }
 
     // 暴力法
     public int[] twoSumA(int[] nums, int target) {

@@ -4,4 +4,4 @@
 
 题号|题名|难易
 :---:|:---:|:---:
-1|[两数之和(TwoSum)](https://github.com/DingYufan/leetcode-java/blob/master/easy/TwoSum.java)|easy|
+1|[两数之和(TwoSum)](https://github.com/DingYufan/leetcode-java/blob/master/easy/TwoSum.java)|<font color="green">easy</font>

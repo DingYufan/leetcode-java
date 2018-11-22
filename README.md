@@ -11,3 +11,5 @@
 5|
 6|
 7|[整数反转(Reverse Integer)](https://github.com/DingYufan/leetcode-java/blob/master/easy/ReverseInteger.java)|Easy
+8|
+9|[回文数(Palindrome Number)](https://github.com/DingYufan/leetcode-java/blob/master/easy/PalindromeNumber.java)|easy

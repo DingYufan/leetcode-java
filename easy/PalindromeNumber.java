@@ -36,6 +36,8 @@ public class PalindromeNumber{
         return ( backup == rev);
     }
 
+    // 这个方法，就是尽量减少了不必要的循环次数
+    // rev一旦大于x,就说明至少有一半数字已经翻转，足够进行比较是否回文了
     public static boolean isPalindromeB(int x) {
         // 负数、10的倍数，都不会是回文数
         if(x < 0 || (x % 10 == 0 && x!=0)){

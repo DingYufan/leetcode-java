@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Stack;
 
 /**
  * 给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。
@@ -27,27 +28,51 @@ public class ValidParentheses{
     public static void main(String[] args){
         String s = "()[]{}";
         String s2 = "";
-        System.out.print(ValidParentheses.isValid(s2));
+        System.out.print(ValidParentheses.isValid(s));
 
     }
 
+    // 没有另外一种快
+    public static boolean isValidB(String s){
+       if(s == null || s.length() == 1){
+           return false;
+       }
+       if(s.length() == 0){
+           return true;
+       }
+       Stack<Character> stack = new Stack<>();
+       for (char c : s.toCharArray()) {
+           if(stack.empty()){
+               stack.push(c);
+               continue;
+           }
+
+           char top = stack.peek();
+           if(top == '(' && c == ')' || top == ')' && c == '(' 
+                || top == '[' && c == ']' || top == ']' && c == '[' 
+                || top == '{' && c == '}' || top == '}' && c == '{' ){
+               stack.pop();
+               continue;
+           }
+           stack.push(c);
+       }
+        return stack.empty();
+    }
+
     public static boolean isValid(String s) {
-        if(s == null){
+        if(s == null || s.length() == 1){
             return false;
         }
-        if("".equals(s)){
+        if(s.length() == 0){
             return true;
-        }
-        if(s.length() < 2){
-            return false;
         }
     
         char[] arr = s.toCharArray();
-        int ptr = 1;
-        int[] myStack = new int[arr.length + 1];
+        int ptr = 1;// int变量作指针
+        int[] myStack = new int[arr.length + 1];// 数组作栈,myStack[0]防止栈pop最后一个元素时IndexOutOfBoundsException
         for (int i = 0; i < arr.length; i++) {
             int val = 0;
-            switch(arr[i]){
+            switch(arr[i]){// 用数字代替各符号
                 case '(':val = -1;break;
                 case ')':val = 1;break;
                 case '[':val = -2;break;
@@ -55,9 +80,6 @@ public class ValidParentheses{
                 case '{':val = -3;break;
                 case '}':val = 3;break;
                 default:break;
-            }
-            if(val == 0){
-                continue;
             }
 
             if(i == 0){
@@ -68,9 +90,9 @@ public class ValidParentheses{
             if(myStack[ptr] + val == 0){
                 myStack[ptr--] = 0;
             }else{
-                myStack[ptr++] = val;
+                myStack[++ptr] = val;
             }
         }
-        return myStack[1] == 0;// ptr == 1 也能判断
+        return myStack[1] == 0;
     }
 }

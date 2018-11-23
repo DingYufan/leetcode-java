@@ -6,10 +6,6 @@
 :---:|:---:|:---:
 1|[两数之和(Two Sum)](https://github.com/DingYufan/leetcode-java/blob/master/easy/TwoSum.java)|Easy
 2|[两数相加(Add Two Numbers)](https://github.com/DingYufan/leetcode-java/blob/master/medium/AddTwoNumbers.java)|Medium
-3|
-4|
-5|
-6|
 7|[整数反转(Reverse Integer)](https://github.com/DingYufan/leetcode-java/blob/master/easy/ReverseInteger.java)|Easy
-8|
 9|[回文数(Palindrome Number)](https://github.com/DingYufan/leetcode-java/blob/master/easy/PalindromeNumber.java)|Easy
+20|[有效的括号(Valid Parentheses)](https://github.com/DingYufan/leetcode-java/blob/master/easy/ValidParentheses.java)|Easy

@@ -10,4 +10,4 @@
 9|[回文数(Palindrome Number)](https://github.com/DingYufan/leetcode-java/blob/master/easy/PalindromeNumber.java)|Easy
 13|[罗马数字转数字(Roman To Int)](https://github.com/DingYufan/leetcode-java/blob/master/easy/RomanToInt.java)|Easy
 20|[有效的括号(Valid Parentheses)](https://github.com/DingYufan/leetcode-java/blob/master/easy/ValidParentheses.java)|Easy
-21|[合并两个有序链表(Merge Two Lists)](https://github.com/DingYufan/leetcode-java/blob/master/easy/MergeTwoLists.java)|Easy
+21|[合并两个有序链表(Merge Two Sorted Lists)](https://github.com/DingYufan/leetcode-java/blob/master/easy/MergeTwoSortedLists.java)|Easy
